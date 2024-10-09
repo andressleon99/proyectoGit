@@ -124,27 +124,38 @@ article p {
 
 #galeria {
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    
+    
+}
+#galeria h2{
+    margin: 0;
+    
 }
 
 .galeria-imagenes {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    
+    
 }
 
 .galeria-imagenes figure {
-    margin: 10px;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease;  /* Añadimos transición a la imagen */
+    display: flex;
+    flex-direction: column;
+    
+    
+    
 }
 
 .galeria-imagenes img {
-    width: 100%;
-    height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease; /* Aplicamos una transición para el cambio suave */
+    
 }
 
 .galeria-imagenes img:hover {
@@ -152,9 +163,11 @@ article p {
 }
 
 .galeria-imagenes figcaption {
-    margin-top: 10px;
+    text-align: center;
     font-size: 16px;
     color: #333;
+    margin-bottom: 15px;
+    
 }
 footer {
     background-color: #006400;
@@ -167,10 +180,27 @@ footer {
 }
 
 .cont-img {
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
+    display: flex;
+    
+    
 }
 .cont-img img{
-    width: 300px;
-    height: 300px;
+    max-width: 150px;
+    height: 150px;
+   
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0;
+    
+}
+.imagen-container{
+    display: flex;
+    
+}
+.imagen-container img{
+    margin: 10px;
 }
